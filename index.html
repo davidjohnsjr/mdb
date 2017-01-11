@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meadowdale Brewing</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+	<!-- This is an internal style block of code to override some of the bootstrap style values-->
+	<style type="text/css">
+		.navbar-inverse {
+			background-color:#003165;
+			font-family: 'Patua One', cursive;
+			margin-top: 3px;
+			box-shadow: 5px 4px 5px #000;
+		}
+		.navbar .nav > li > a {
+			color: #84B1DB; /*nav color*/
+			text-shadow: none;
+		}
+		.navbar .nav > li > a:hover {
+			color:white;
+			background: #94BBE2;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="mdbStyles.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- for a responsive collapse style menu -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!--  2017  responsive navbar for MDB site-->
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!-- for a responsive collapse style menu -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#/">Meadowdale Brewing <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span></a>
+					<!-- for a responsive collapse style menu -->
+				</div> <!-- close navbar-header -->
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="fall2016.html">Fall 2016</a></li>
+						<li><a href="winter2017.html">Winter 2017</a></li>
+						<li><a href="#">Spring 2017</a></li>
+					</ul>
+				</div>
+			</div> <!-- close fluid nav container -->
+		</nav>
+
+		<div class="alert alert-danger">
+			This site is under development!
+		</div>
+		<div class="container-fluid">
+			<h1>Welcome to Medowdale Brewing</h1>
+		</div>
+	</div>
+</body>
+</html>

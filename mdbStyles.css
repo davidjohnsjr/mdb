@@ -1,0 +1,48 @@
+/*   Meadowdale Brewing Reference and hopefully a database for all down the road
+    January 2017 */
+.oddRow {
+    background-color: #efefef;
+}
+.evenRow {
+    background-color:  #94c2ef;
+}
+.brewDate {
+    color: #efefef;
+    background-color: #003165;
+    font-weight: bold;
+    padding: 2px;
+}
+.love {
+    color: #bd397d;
+}
+.green {
+    color: green;
+}
+h3{
+    font-family: 'Patua One', cursive;
+}
+h4 {
+    font-style: oblique;
+    font-family: Comic;
+    font-weight: bolder;
+}
+body {
+    color: #003165;
+}
+
+table, th, td {
+    padding: 3px;
+}
+th.th2 {
+    font-size: 16px;
+    text-decoration: underline;
+    font-family: 'Patua One', cursive;
+    font-weight: lighter;
+}
+.qty {
+    width: 55px;
+    text-decoration: underline;
+}
+.type {
+    width: 250px;
+}

@@ -1,0 +1,538 @@
+<!-- Meadowdale Brewing Reference and hopefully a database for all down the road
+    January 2017 -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Meadowdale Brewing</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <!-- This is an internal style block of code to override some of the bootstrap style values-->
+        <style type="text/css">
+            .navbar-inverse {
+                background-color:#003165;
+                font-family: 'Patua One', cursive;
+                margin-top: 3px;
+                box-shadow: 5px 4px 5px #000;
+            }
+            .navbar .nav > li > a {
+                color: #84B1DB; /*nav color*/
+                text-shadow: none;
+            }
+            .navbar .nav > li > a:hover {
+                color:white;
+                background: #94BBE2;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="mdbStyles.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- for a responsive collapse style menu -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <!--  2017  responsive navbar for MDB site-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- for a responsive collapse style menu -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="index.html">Meadowdale Brewing <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span></a>
+                        <!-- for a responsive collapse style menu -->
+                    </div> <!-- close navbar-header -->
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                           <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fall 2016 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="#1">#1 Box IPA</a></li>
+                                    <li><a href="#2">#2 IPA-Peat Style</a></li>
+                                    <li><a href="#3">#3 Honey Ale</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#4">#4 Honey Amber</a></li>
+                                    <li><a href="#5">#5 Fall Into Winter Spiced Ale</a></li>
+                                    <li><a href="#6">#6 Honey Ale Remix</a></li>
+                                    <li><a href="#7">#7 Honey Citra IPA</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#8">#8 Hoppy Momma IPA</a></li>
+                                    <li><a href="#9">#9 Sounders Celebration IPA</a></li>
+                                    <li><a href="#10">#10 Dave's Hoppy Red Ale</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="winter2017.html">Winter 2017</a></li>
+                            <li><a href="#">Spring 2017</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- close fluid nav container -->
+            </nav>
+            <div class="container-fluid">
+                <h1>Fall 2016</h1>
+                <!--  myclass and myclass2 make different color backgrounds for each beer -->
+                <div class="row oddRow" id="1">
+                    <div class="col-sm-4">
+                        <h3>#1 Boxed IPA</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on October 8, 2016.</span> <span class="glyphicon glyphicon-glass" aria-hidden="true"></span> This is my first brew at my home. Thank's to Gallagher's of Edmonds, WA (during the 2000's) and BrewWorks (during the 1990's in Juanita, WA) for helping me learn to brew before this first 'homebrew'. Very tasty beer from a box with extra Citra thrown in the mix. Love the Citra. Good bitterness. Not too hoppy. Amber color. </p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1050</td></tr>
+                            <tr><td>Final Gravity</td><td>1015</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>4.6%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>166</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$45</td></tr>
+                        </table>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Crisp Crystal 60L Malt</td><td>16 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Muntons Amber Liquid Malt Extract</td><td>6.6 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Cascade</td><td>1 oz</td></tr>
+                            <tr><td>Pilgrim</td><td>0.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Citra</td><td>0.5 oz</td></tr>
+                            <tr><td>Pilgrim</td><td>0.25 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Citra</td><td>0.5 oz</td></tr>
+                            <tr><td>Pilgrim</td><td>0.25 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Homegrown Cascade</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row-->
+                <div class="row evenRow" id = "2">
+                    <div class="col-sm-4">
+                        <h3>#2 IPA Peat-Style</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on October 30, 2016.</span> This is our Peat Style IPA.  Strong bitter notes. Not hoppy enough (added dry hop in keg). Good, but not great. Great color and first taste, just didn’t leave hoppy momma. The peat is mild, but hard to taste through the bitterness. Hopefully dry hops helps. Final eval: loved the bitterness. </p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1059</td></tr>
+                            <tr><td>Final Gravity</td><td>1012</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>6.1%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>193</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$45</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Munich</td><td>8 oz</td></tr>
+                            <tr><td>Roasted Barley</td><td>3 oz</td></tr>
+                            <tr><td>Peated Malt</td><td>2 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>6.6 lbs</td></tr>
+                            <tr><td>Briess Golden Lager Dry Extract</td><td>1.0 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>American Ale Safale 05</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Chinook</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Columbus</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Columbus</td><td>1 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Homegrown Cascade</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->    
+                </div>  <!-- close row-->
+                <div class="row oddRow" id="3">
+                    <div class="col-sm-4">
+                        <h3>#3 Honey Ale</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on November 6, 2016.</span> Not too hoppy. Amber color. Should have used Magnum as bitter, see Honey Ale #6 for best results. HBC 438 (tropical stone fruit with herbal and mint), Chinook, Magnum </p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1052</td></tr>
+                            <tr><td>Final Gravity</td><td>1010</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>5.5%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>170</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$46</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Crystal 45L Malt</td><td>4 oz</td></tr>
+                            <tr><td>Munich</td><td>4 oz</td></tr>
+                            <tr><td>Honey Ale</td><td>4 oz</td></tr>
+                            <tr><td>Canadian Pale</td><td>3 oz</td></tr>
+                            <tr><td>Carapils</td><td>3 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>6.6 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Chinook (A 14.1)</td><td>1.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>0.5 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Homegrown Cascade</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row-->
+                <div class="row evenRow" id="4">
+                    <div class="col-sm-4">
+                        <h3>#4 Honey Amber</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on November 11, 2016.</span>  <span class="glyphicon glyphicon-heart-empty love" aria-hidden="true"></span>  Not hoppy, faily malty. Single Grain (Honey Ale).  Magnum at aroma kept it a lower hoppy finish, but the Citra dry helps us hoppy folks. Lot's of non-IPA friends have really enjoyed it.  Mixed well with #5 Spiced Ale.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1050</td></tr>
+                            <tr><td>Final Gravity</td><td>1014</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>4.73%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>166</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$43</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Honey Ale</td><td>20 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Amber LME</td><td>6.6 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Chinook (A 14.1)</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>none</td><td></td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>1 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Citra</td><td>1 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row-->
+                <div class="row oddRow" id="5">
+                    <div class="col-sm-4">
+                        <h3>#5 Fall into Winter Spiced Ale</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on November 13, 2016.</span> <span class="glyphicon glyphicon-glass" aria-hidden="true"></span> Don’t like the beer candy. Messy and risks contamination. Extra yeast caused immediate gurgling. Lots of corraiander flavor, not enough orange and cinnamon. Enjoyed the B44 Imperial yeast. Wasn't intended to have both wit beer yeats and american ale yeast, but it worked out fine. Just the IMperial yeast would be good.  LOVED THIS BEER WITH THE AMBER.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1050</td></tr>
+                            <tr><td>Final Gravity</td><td>1010</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>5.6%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>175</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$67</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Maris Otter</td><td>9.5 oz</td></tr>
+                            <tr><td>Crystal 45L Malt</td><td>4.5 oz</td></tr>
+                            <tr><td>Vienna</td><td>3.5 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>6.6 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Imperial Yeast B44 Whitout</td><td>1 can</td></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Chinook (A 14.1)</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>0.5 oz</td></tr>
+                            <tr><td>BrewCraft Irish Moss</td><td>2 tsp</td></tr>
+                            <tr><td>Graden Croiander</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>1 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Simcoe</td><td>1 oz</td></tr>
+                            <tr><td>Cascade Beer Candi Syrup</td><td>1 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row 5-->
+                <div class="row evenRow" id="6">
+                    <div class="col-sm-4">
+                        <h3>#6 Honey Ale Remix</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on November 23, 2016.</span> <span class="glyphicon glyphicon-heart love" aria-hidden="true"></span> This is how the Honey Ale should have been done. I had the hops in the wrong order. Trying #3 again with flip of chinook and magnum and no crystal grain. HBC 438 (tropical stone fruit with herbal and mint), Chinook, Magnum. It is very smooth and good. Just hoppy enough for us, but not too much for others.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1052</td></tr>
+                            <tr><td>Final Gravity</td><td>1013</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>5.2%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>172</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$50</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Honey Ale</td><td>8 oz</td></tr>
+                            <tr><td>Munich</td><td>4 oz</td></tr>
+                            <tr><td>Canadian Pale</td><td>3 oz</td></tr>
+                            <tr><td>Carapils</td><td>3 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>6.6 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>1.0 oz</td></tr>
+                            <tr><td>Chinook (A 14.1)</td><td>0.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Chinook (A 14.1)</td><td>1.0 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1.0 oz</td></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>0.5 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Homegrown Cascade</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row 6-->
+                <div class="row oddRow" id="7">
+                    <div class="col-sm-4">
+                        <h3>#7 Honey Citra IPA</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on December 3, 2016.</span> <span class="glyphicon glyphicon-heart love" aria-hidden="true"> </span> <span class="glyphicon glyphicon-heart love" aria-hidden="true"> </span>Switching chinook and cirta plus more hops. HBC 438 (tropical stone fruit with herbal and mint), Citra, Magnum.  Hoppy happiness.  Too hoppy for some people.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1054</td></tr>
+                            <tr><td>Final Gravity</td><td>1012</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>5.5%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>174</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$52</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Honey Ale</td><td>8 oz</td></tr>
+                            <tr><td>Munich</td><td>4 oz</td></tr>
+                            <tr><td>Canadian Pale</td><td>3 oz</td></tr>
+                            <tr><td>Carapils</td><td>3 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>6.6 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>1.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1.0 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1.0 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1.0 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1.0 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row 7-->
+                <div class="row evenRow" id="8">
+                    <div class="col-sm-4">
+                        <h3>#8 Hoppy Momma Strong Ale</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on December 11, 2016.</span> Citra and HBC 438 (tropical stone fruit with herbal and mint). From a recipe listed at Mirco Homebrew called Rocky Mountain Pale. 50% more LME. Moved to second fermentation too soon and FG was too high (1018). First taste is too sugary. So, I found the line of what is too far. Too many sugars, too many hops (lots of trouble moving from container to container), too much money, and too many calories! Became drinkable after 3 weeks</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1064</td></tr>
+                            <tr><td>Final Gravity</td><td>1018</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>6.0%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>213</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$72.50</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Vienna</td><td>16 oz</td></tr>
+                            <tr><td>Honey Ale</td><td>12 oz</td></tr>
+                            <tr><td>Carapils</td><td>12 oz</td></tr>
+                            <tr><td>Caramel 40L</td><td>8 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>9.9 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9) (before boil)</td><td>0.5 oz</td></tr>
+                            <tr><td>Citra (A 14.1)</td><td>0.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>0.5 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1.0 oz</td></tr>
+                            <tr><td>Irish Moss</td><td>2 tsp</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1.0 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1.0 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9) after cooling</td><td>0.5 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row 8-->
+                <div class="row oddRow" id="9">
+                    <div class="col-sm-4">
+                        <h3>#9 Sounders Celebration Ale</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on December 11, 2016.</span> Simcoe and HBC 438 (tropical stone fruit with herbal and mint). From a recipe listed at Mircor Homebrew called Rocky Mountain Pale. Sounders won first MLS title, a celebration ale was necessary. 50% more LME. Moved to second fermentation too soon and FG was too high (1020). First taste is too malty with all the hops. Too many sugars, too many hops (lots of trouble moving from container to container), too much money, and too many calories!  Drinkable about
+                        </p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1064</td></tr>
+                            <tr><td>Final Gravity</td><td>1020</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>5.78%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>214</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$72.50</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Vienna</td><td>16 oz</td></tr>
+                            <tr><td>Honey Ale</td><td>12 oz</td></tr>
+                            <tr><td>Carapils</td><td>12 oz</td></tr>
+                            <tr><td>Caramel 40L</td><td>8 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Briess Golden Lager LME</td><td>9.9 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9) (before boil)</td><td>0.5 oz</td></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>0.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>0.5 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1.0 oz</td></tr>
+                            <tr><td>Irish Moss</td><td>2 tsp</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>1.0 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1.0 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9) after cooling</td><td>0.5 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row 9-->
+                <div class="row evenRow" id="10">
+                    <div class="col-sm-4">
+                        <h3>#10 Dave's Hoppy Red Ale</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <span class="brewDate">Brewed on December 20, 2016.</span> <span class="glyphicon glyphicon-duplicate green" aria-hidden="true"></span> A double batch (10 gallons total). Red Ale with a hop twist. Insipired by Big E's Hoppy Red Ale.  Didn't come out near as hoppy as I would like. A bit more bitter than I wanted.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1068</td></tr>
+                            <tr><td>Final Gravity</td><td>1012</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>7.6%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>230</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$41.60</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Red X Malt</td><td>12 oz</td></tr>
+                            <tr><td>Carapils</td><td>10 oz</td></tr>
+                            <tr><td>Melanodin Malt</td><td>4 oz</td></tr>
+                            <tr><td>Belgian Special B</td><td>4 oz</td></tr>
+                            <tr><td>Black Barley</td><td>2 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Bulk Pale Malt Liquid Extract</td><td>7.0 lbs</td></tr>
+                            <tr><td>Dextrose Powder</td><td>1.0 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 04 British Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Chinook (A 14.1)</td><td>0.7 oz</td></tr>
+                            <tr><td>Magnum (A 13.5)</td><td>0.3 oz</td></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>0.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>0.5 oz</td></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>0.5 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>0.5 oz</td></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)</td><td>0.5 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Colombus (A 15.6, B 5.1)</td><td>0.5 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row-->
+            </div> <!-- closing container column contents -->
+        </div> <!-- closing container of whole page -->
+    </body>
+
+<!--     script loaded after page to control hover over menu items -->
+            <script type="text/javascript">
+            $('ul.nav li.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);}, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        </script>
+    </html>

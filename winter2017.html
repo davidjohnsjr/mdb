@@ -1,0 +1,179 @@
+<!-- Meadowdale Brewing Reference and hopefully a database for all down the road
+    January 2017 -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Meadowdale Brewing</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <!-- This is an internal style block of code to override some of the bootstrap style values-->
+        <style type="text/css">
+            .navbar-inverse {
+                background-color:#003165;
+                font-family: 'Patua One', cursive;
+                margin-top: 3px;
+                box-shadow: 5px 4px 5px #000;
+            }
+            .navbar .nav > li > a {
+                color: #84B1DB; /*nav color*/
+                text-shadow: none;
+            }
+            .navbar .nav > li > a:hover {
+                color:white;
+                background: #94BBE2;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="mdbStyles.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- for a responsive collapse style menu -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--  2017  responsive navbar for MDB site-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!-- for a responsive collapse style menu -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="index.html">Meadowdale Brewing <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span></a>
+                        <!-- for a responsive collapse style menu -->
+                    </div> <!-- close navbar-header -->
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                           
+                            <li><a href="fall2016.html">Fall 2016</a></li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Winter 2017 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                <li><a href="#11">#11 Santa's Seattle</a></li>
+                                    <li><a href="#12">#12 Honey Citra IPA</a></li>
+                                    <li><a href="#13">#13 </a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Spring 2017</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- close fluid nav container -->
+            </nav>
+
+            <div class="container-fluid">
+                <h1>Winter 2017</h1>
+                <!--  myclass and myclass2 make different color backgrounds for each beer -->
+                <div class="row oddRow" id="11">
+                    <div class="col-sm-4">
+                        <h3>#11 Santa's Seattle Ale</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on January 2, 2017.</span> <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>  My version of the Bad Santa recipe found online in multiple places. Santa makes it to Seattle and gets a little hoppy! The dried cherries and vanilla make it very expensive. Tip: Remove 2 qts. of wort and steep cherries. Add remaining malt extract and maple syrup with 15 minutes left in the boil. Add cherry steeping wort at end of boil.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1060</td></tr>
+                            <tr><td>Final Gravity</td><td>1012</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>7.6%</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>230</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>$68</td></tr>
+                        </table>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Caravienna</td><td>8 oz</td></tr>
+                            <tr><td>Caramunich</td><td>8 oz</td></tr>
+                            <tr><td>Belgian Special B</td><td>4 oz</td></tr>
+                            <tr><td>Black Barley</td><td>2 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Bulk: Pale Liquid Malt Extract</td><td>7 lbs</td></tr>
+                            <tr><td>Organic Light Dry Malt Extract</td><td>1 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale Us-04 Dry British Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Centennial (A 8.7 B 3.6)</td><td>1.0 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Simcoe (A 13.2  B 3.7)  </td><td>1.0 oz</td></tr>
+                            <tr><td>Kirkland Maple Sryup (10 mins of boil)</td><td>12 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Columbus (15.6  B 5.1)</td><td>0.5 oz</td></tr>
+                            <tr><td>Dried Cheeries (steep and add after burnout)</td><td>1.0 lbs</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Columbus (15.6  B 5.1)</td><td>0.5 oz</td></tr>
+                            <tr><td>One Vanilla Bean</td></tr>
+                            <tr><td>Three Cinnamon Sticks</td></tr>
+                        </table>
+                    </div> <!-- close column-->        
+                </div><!-- close row-->
+                <div class="row evenRow" id = "12">
+                    <div class="col-sm-4">
+                        <h3>#12 Honey Citra IPA v2</h3>
+                        <p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="brewDate">Brewed on January 2, 2017.</span>  <span class="glyphicon glyphicon-heart love" aria-hidden="true"></span> This was amazing on number #7, so we are are doing it again with a few adjustments.</p>
+                        <table>
+                            <tr><th class="th2 type">Contents</th></tr>
+                            <tr><td>Original Gravity</td><td>1058</td></tr>
+                            <tr><td>Final Gravity</td><td>?</td></tr>
+                            <tr><td>Alcohol By Volume</td><td>?</td></tr>
+                            <tr><td>Calories per 12 ounces</td><td>?</td></tr>
+                            <tr><td>Cost for 5 gallons</td><td>?</td></tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <table>
+                            <tr><th class="th2 type">Grains</th><th class="qty">Qty</th></tr>
+                            <tr><td>Honey Ale</td><td>8 oz</td></tr>
+                            <tr><td>Munich</td><td>4 oz</td></tr>
+                            <tr><td>Pacific Northwest Pale</td><td>4 oz</td></tr>
+                            <tr><td>Carapils</td><td>4 oz</td></tr>
+                            <tr><th class="th2 type">Malts</th></tr>
+                            <tr><td>Bulk: Pale Liquid Malt Extract</td><td>7.0 lbs</td></tr>
+                            <tr><th class="th2 type">Yeast</th></tr>
+                            <tr><td>Safale 05 American Ale Yeast</td><td>11.5 oz</td></tr>
+                            <tr><td>Clarity Ferm</td><td>1 vile</td></tr>
+                        </table>
+                    </div> <!-- close column-->
+                    <div class="col-sm-4">
+                        <table>
+                            <th class="th2 type">Hops</th><th class="qty">Qty</th>
+                            <tr><th>Bitter</th></tr>
+                            <tr><td>Centennial (A 8.7 B 3.6)</td><td>1.5 oz</td></tr>
+                            <tr><th>Aroma 1</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1 oz</td></tr>
+                            <tr><th>Aroma 2</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1 oz</td></tr>
+                            <tr><td>HBC 438 (A 15.7, B 5.9)</td><td>1 oz</td></tr>
+                            <tr><th>Dry</th></tr>
+                            <tr><td>Citra (A 14.1)</td><td>1.0 oz</td></tr>
+                        </table>
+                    </div> <!-- close column-->    
+                </div>  <!-- close row-->                
+            </div> <!-- closing container column contents -->
+        </div> <!-- closing container of whole page -->
+    </body>
+
+<!--     script loaded after page to control hover over menu items -->
+            <script type="text/javascript">
+            $('ul.nav li.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);}, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        </script>
+    </html>
